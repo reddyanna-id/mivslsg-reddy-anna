@@ -1,0 +1,167 @@
+body {
+    background: linear-gradient(90deg, #fdb913 0%, #111827 50%, #00a3ff 100%);
+}
+/* ===== STADIUM BACKGROUND ===== */
+.stadium-bg {
+    background: url('images/Reddy\ Anna\ Book\ -\ CSK\ vs\ MI\,\ IPL\ 2026.webp') no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.3);
+    border: 2px solid #ffcc00;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.image-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Dark overlay for stadium effect */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+}
+
+/* Content container */
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: auto;
+    padding: 30px;
+    z-index: 2;
+}
+
+/* ===== ANIMATED TITLE ===== */
+.glow-title {
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+    }
+    to {
+        text-shadow: 0 0 20px #00f2ff, 0 0 30px #ff0055;
+    }
+}
+
+/* ===== MAIN ARTICLE CARD ===== */
+.match-card {
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 18px;
+    padding: 25px;
+    margin-top: 20px;
+    color: #eee;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* ===== HEADINGS ===== */
+h1, h3 {
+    color: #ffffff;
+}
+
+h3 {
+    border-left: 5px solid #ffcc00;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+    color: #dcdcdc;
+    line-height: 1.7;
+}
+
+/* ===== LINKS (IPL STYLE) ===== */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00f2ff;
+}
+
+/* ===== LIVE SCORE STYLE CARDS ===== */
+.live-card {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+    color: white;
+    border-left: 4px solid #ffcc00;
+}
+
+/* CSK Theme */
+.team-csk {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* MI Theme */
+.team-mi {
+    color: #00a3ff;
+    font-weight: bold;
+}
+
+/* ===== PREDICTION BOX ===== */
+.prediction-box {
+    background: linear-gradient(90deg, #141e30, #243b55);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #ff0055;
+    margin-top: 20px;
+}
+
+/* ===== BUTTON STYLE (OPTIONAL CTA) ===== */
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #00f2ff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .glow-title {
+        font-size: 22px;
+    }
+
+    .match-card {
+        padding: 15px;
+    }
+}
